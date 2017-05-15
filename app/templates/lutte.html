@@ -1,0 +1,292 @@
+{% extends "layout.html" %}
+{% block javascript %}
+<script type="text/javascript">
+  $(document).ready(function() {
+    var mymap = L.map('mapid').setView([46.247377, 1.504289], 13);
+    var fistIcon = L.icon({
+        iconUrl: '{{ url_for('static', filename='img/leaflet/fist.png') }}',
+        shadowUrl: '{{ url_for('static', filename='img/leaflet/fist-shadow.png') }}',
+
+        iconSize:     [41, 59], // size of the icon
+        shadowSize:   [82, 63], // size of the shadow
+        iconAnchor:   [20, 59], // point of the icon which will correspond to marker's location
+        shadowAnchor: [20, 59],  // the same for the shadow
+        popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+    });
+    L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+      maxZoom: 18,
+      attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+        '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+        'Imagery © <a href="http://mapbox.com">Mapbox</a>',
+      id: 'mapbox.streets'
+    }).addTo(mymap);
+
+    L.marker([46.247377, 1.504289], {icon: fistIcon}).addTo(mymap);
+  })
+</script>
+{% endblock %}
+{% block body %}
+<div id="index-banner" class="parallax-container">
+  <div class="section no-pad-bot">
+    <div class="container">
+      <br><br>
+      <h1 class="header center red-text text-accent-2" style="font-size:7rem;font-weight:600;margin-bottom:0px;">G M & S</h1>
+      <div class="row center">
+        <h4 class="header col s12" style="margin-bottom:0px;">Fabricant de pièces automobiles à La Souterraine, France</h4>
+      </div>
+      <div class="row center">
+        <h3 class="header col s12">283 salariés</h4>
+      </div>
+      <br><br>
+
+    </div>
+  </div>
+  <div class="parallax">
+    <img src="repertoire/gms/photos/gms2.jpg" alt="Unsplashed background img 1" style="-webkit-filter: blur(1px) contrast(200%) grayscale(100%);">
+    <div class="blue darken-4" style="opacity:0.7; width: 100%; height: 100%;  position: absolute; top: 0; left: 0;"></div>
+  </div>
+</div>
+
+
+<div class="container" style="margin-bottom:100px;">
+  <div class="section">
+
+    <!--   Icon Section   -->
+    <div class="row">
+      <div class="col s12 m4">
+        <div class="icon-block" go="#contexte">
+          <h2 class="center red-text" style="font-size:6rem;margin-bottom:0px;"><i class="material-icons">info_outline</i></h2>
+          <h4 class="center blue-text text-darken-2">Le contexte</h4>
+
+          <p class="light" style="font-size:18px;text-align:center;">30 ans de dépeçage</p>
+        </div>
+      </div>
+
+      <div class="col s12 m4">
+        <div class="icon-block" go="#combat">
+          <h2 class="center red-text" style="font-size:6rem;margin-bottom:0px;"><i class="material-icons">flash_on</i></h2>
+          <h4 class="center blue-text text-darken-2">Le combat</h4>
+
+          <p class="light" style="font-size:18px;text-align:center;">L'Usine est occupée depuis le <b>11 mai 2017</b></p>
+        </div>
+      </div>
+
+      <div class="col s12 m4">
+        <div class="icon-block" go="#soutien">
+          <h2 class="center red-text" style="font-size:6rem;margin-bottom:0px;"><i class="material-icons">thumb_up</i></h2>
+          <h4 class="center blue-text text-darken-2">Soutenons-les !</h4>
+
+          <p class="light" style="font-size:18px;text-align:center;">Soutien moral ou financier, agissez !</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="parallax-container valign-wrapper">
+  <div class="section no-pad-bot">
+    <div class="container">
+      <div class="row center">
+        <!--<h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>-->
+      </div>
+    </div>
+  </div>
+  <div class="parallax"><img src="repertoire/gms/photos/gms4.jpg" alt="Unsplashed background img 2"></div>
+</div>
+
+<div id="contexte" class="container">
+  <div class="section">
+
+    <div class="row">
+      <div class="col s12 center">
+        <h3 class="center blue-text text-darken-2" style="margin-bottom:30px;">Le contexte</h3>
+        <div class="grid center">
+            <div class="card blue lighten-5">
+              <div class="card-content">
+                <span class="card-title red-text">1962</span>
+                <p>Arrivée de la société Euramec à la Souterraine.</p>
+              </div>
+            </div>
+            <div class="card blue lighten-5">
+              <div class="card-content">
+                <span class="card-title red-text">1989</span>
+                <p>Installation de l’entreprise Socomec (sous-traitance mécanique) à La Souterraine (Creuse) qui devient la Sepesa en 1990. On y compte jusqu’à 600 salariés.</p>
+              </div>
+            </div>
+            <div class="card blue lighten-5">
+              <div class="card-content">
+                <span class="card-title red-text">1991-1993</span>
+                <p>La Sepesa et Euramec sont absorbées par SER. Le site de Bessines-sur-Gartempe (Haute-Vienne) est choisi pour permettre l’embauche de personnels issus de la Cogéma après la fermeture des mines d’uranium. On y assemble notamment l’unité avant de l'Espace Renault. A la Souterraine, on fabrique des petits sous-ensembles par emboutissage et assemblage par soudure.</p>
+              </div>
+            </div>
+            <div class="card blue lighten-5">
+              <div class="card-content">
+                <span class="card-title red-text">1997</span>
+                <p>Les sites de La Souterraine et de Bessines sont rachetés par Aries Industries avec la suppression de 60 emplois.</p>
+              </div>
+            </div>
+            <div class="card blue lighten-5">
+              <div class="card-content">
+                <span class="card-title red-text">1998</span>
+                <p>Les deux sites deviennent des filiales de Aries Industries Embouteillage qui passe rapidement aux mains du géant britannique Wagon Automotive. Les usines tournent plutôt bien pendant 7 ans.</p>
+              </div>
+            </div>
+            <div class="card blue lighten-5">
+              <div class="card-content">
+                <span class="card-title red-text">2005-2006</span>
+                <p>Wagon “rachète” son homologue danois Oxford. Le patron d’Oxford, Wilbur Ross, prend la direction du nouveau groupe Wagon Oxford . L’équipementier britannico-danois réalise 1,16 milliard d’euros de chiffre d'affaires annuel et emploie 7.600 salariés réparties en 28 usines dont 13 en France.</p>
+              </div>
+            </div>
+            <div class="card blue lighten-5">
+              <div class="card-content">
+                <span class="card-title red-text">2006</span>
+                <p>Wagon Oxford qui a monté des sites en Europe de l’Est annonce un plan social sur les deux sites limousins notamment. Les usines de Bessines et La Souterraine sont vendues à un cadre de Wagon, David Cardwell (ex- directeur des produits spéciaux et de l’emboutissage) qui fonde Sonas (la "bonne chance" en Irlandais) avec la suppression de 20 emplois en Creuse et 20 millions d’Euros et promet l’arrivée d’une chaîne robotique avec une presse de 800 tonnes à Bessines et une de 1.000 tonnes à La Souterraine. Il annonce la création d’emplois. Il entend réfléchir à une diversification pour aller au-delà du secteur automobile. Les syndicats craignent en effet que Sonas devienne un sous-traitant de Wagon.</p>
+                <p>A ce stade, la région Limousin a déjà donné environ 800.000€ d’aides et de subventions aux entreprises qui se sont succédé à Bessines et à La Souterraine.</p>
+              </div>
+            </div>
+            <div class="card blue lighten-5">
+              <div class="card-content">
+                <span class="card-title red-text">2008</span>
+                <p>Rien ne va plus. Le tribunal de grande instance de Guéret place le groupe Sonas en redressement judiciaire le 21 novembre 2008. La faute à une mauvaise gestion, à la crise et à la hausse des matières premières comme l’acier qui a doublé en quelques années. De fait, David Cardwell a mal négocié les conditions de la reprise. Wagon lui a imposé un délai anormalement court - trois ans dans un secteur où les marges bénéficiaires sont de 2 ou 3% - pour rembourser le rachat de ses usines.</p>
+                <p>Étranglée par ses remboursements, Sonas ne dispose d’aucune trésorerie pour faire face à la crise. Surtout, Sonas n’a jamais exploré comme promis le ferroviaire ou l’industrie agricole. De fait, Sonas travaille pour Wagon et des grands constructeurs automobiles français.</p>
+                <p>Socomec, Sepesa, Wagon, Sonas, Altia, GM&S Industry... L'entreprise de La Souterraine a changé de nom, et de mains, à de nombreuses reprises.</p>
+              </div>
+            </div>
+            <div class="card blue lighten-5">
+              <div class="card-content">
+                <span class="card-title red-text">2010</span>
+                <p>Altia, c’est 43 millions d’euros de chiffres d’affaires à la Souterraine (240 millions à l’échelle du groupe), 310 salariés, 4 métiers en production (découpe, emboutissage, soudure, cataphorèse, tôlerie) et 280.000 pièces par jour pour Renault, Peugeot, Citroën, Volkswagen, Lamforder, Valéo, Ford, Meillor et BMW. Altia investit 1,5 million d’euros à La Souterraine.</p>
+              </div>
+            </div>
+            <div class="card blue lighten-5">
+              <div class="card-content">
+                <span class="card-title red-text">2011</span>
+                 <p>Tout va bien pour le Groupe Altia qui affiche 450 millions de chiffres d’affaires, 3.000 collaborateurs et est implanté dans 6 pays (France, Italie, Maroc et Tunisie). Etat et élus suivent. Le fonds de modernisation des équipementiers automobiles (FMEA) rang 2 rentre au capital d’Altia à hauteur de 5 millions d’euros. Une extension de l’usine de la Souterraine et l’acquisition de deux nouvelles presses sont prévues.</p>
+              </div>
+            </div>
+            <div class="card blue lighten-5">
+              <div class="card-content">
+                <span class="card-title red-text">2012</span>
+                <p>En février, rien ne va plus. Les sites de la Souterraine et de Bessines débrayent contre des licenciements et les syndicats accusent Altia de piller les sites financièrement.</p>
+              </div>
+            </div>
+            <div class="card blue lighten-5">
+              <div class="card-content">
+                <span class="card-title red-text">2013</span>
+                <p>La situation s'aggrave. En janvier 2013, la trésorerie est à sec, les dettes envers les fournisseurs s’accumulent, les salaires sont versés avec retard et font craindre un redressement judiciaire. Si la conjoncture est plus que morose dans le secteur automobile, la crise est aussi structurelle</p>
+                <p>Le 6 février 2013, les élus CGT et FO sont reçus par Arnaud Montebourg, ministre du redressement productif. Ils dénoncent une stratégie financière plus qu’industrielle avec une méthode simple : racheter à la barre des tribunaux de commerce des entreprises en difficultés ; financer l’opération par un prêt bancaire ; créer un flux de recettes en faisant louer les usines par les filiales pour contribuer au remboursement des intérêts de la dette ; optimiser globalement tous les flux financiers entre les différents secteurs du groupe, pourquoi pas avec un prélèvement mensuel sur la trésorerie des sites.</p>
+                <p>Ainsi, alors qu’Altia annonce 7 millions d’investissement, un agrandissement et l’installation d’une grande presse et d'un laser découpe, la matière première arrive au compte goutte. Le site de la Souterraine verse 120.000 € de loyer chaque trimestre à la SCI du groupe et a dépensé 1,2 million d’euros en taxi ou jet privé pour expédier des pièces en urgence et déjà 800.000 € rien qu’en janvier 2013.</p>
+              </div>
+            </div>
+            <div class="card blue lighten-5">
+              <div class="card-content">
+                <span class="card-title red-text">2014</span>
+                <p>Pas d’amélioration, bien au contraire. En février, les élus creusois et régionaux, scandalisés et le site de la Souterraine saigné à blanc en appellent à l’Etat. Ils dénoncent un jeu de bonneteau légal et les patrons voyous. Les salariés bloquent les pièces destinées à Renault, PSA et Nissan pour qu’ils fassent pression sur Altia et ils manifestent à Limoges.</p>
+                <p>Le 28 avril 2014, le tribunal de commerce de Paris place les sites de Bessines et de La Souterraine, rachetés à Altia par Transatlantic Industries, en redressement judiciaire. PSA a émis de sérieuses réserves sur la solvabilité des repreneurs. Transatlantic Industries a été créée le 19 mars 2014 dans le Wyoming et a racheté cinq sites industriels français totalisant 780 salariés en un après-midi pour 1 € chacun. Les syndicats veulent déclencher une enquête et que l’Etat actionnaire à 20% d’Altia exerce son droit de regard. Renault et PSA s’engagent à soutenir l’activité des sites de la Souterraine et de Bessines.</p>
+                <p>En juin, les salariés demandent le remboursement des fonds publics soit 1,787 million d’euros.</p>
+                <p>Le 1er décembre 2014, le tribunal de commerce de Paris valide l’offre de GM&S Industry présidé par Gianpiero Colla portant sur la reprise d’Altia à la Souterraine. GM&S conserve 280 salariés sur 322. GM&S semble avoir un vrai projet industriel et toujours la volonté de trouver des nouveaux marchés hors automobile.</p>
+              </div>
+            </div>
+            <div class="card blue lighten-5">
+              <div class="card-content">
+                <span class="card-title red-text">2015</span>
+                <p>Gianpiero Colla va empocher 740.000 € de CICE (Crédit d’impôt pour la compétitivité et l’emploi) mais n’investira jamais ni ne trouvera de nouveaux marchés comme il l'avait promis. Et il ne semble pas avoir la confiance de certains constructeurs comme Renault qui réduisent leurs commandes. En juin, les salariés n’entendent plus parler de l’industriel italien. Alain Rousset, président socialiste de la Nouvelle-Aquitaine, demande aux présidents de Peugeot et au patron de Renault de s’associer aux efforts en attribuant dès maintenant les volumes d’activités permettant à GM&S d’entamer son redressement.</p>
+                <p>Nouveau coup dur lorsque, le 14 avril 2015, la cour d’appel de Paris réforme le jugement rendu par le tribunal de commerce qui avait inclus dans son périmètre la société civile immobilière, propriétaire des bâtiments de La Souterraine et de Bessines. Avec pour conséquence désormais le versement d’un loyer aux anciens dirigeants d’Altia.</p>
+                <p>Le site de Bessines a lui rejoint Steva en février 2015 et se porte plutôt bien.</p>
+                <p>Blocage de l'A20 par GM&S.</p>
+              </div>
+            </div>
+            <div class="card blue lighten-5">
+              <div class="card-content">
+                <span class="card-title red-text">2016</span>
+                <p>Le 24 novembre, les salariés occasionnent un bouchon de 5 km sur l’autoroute A20 en se rendant en voiture à Limoges où ils font le siège de l’antenne du Conseil régional. Le 2 décembre 2016, GM&S échappe de peu à la liquidation judiciaire. L’entreprise est placée en redressement judiciaire avec une période d’observation de six mois mais avec “une revoyure le 27 janvier 2017".</p>
+                <p>En attendant, une table ronde est organisée le 13 décembre à Bercy. La CGT attend de l'Etat qui a versé de l’argent public à des repreneurs qu'il trouve un repreneur avec un vrai projet industriel. Le 18 décembre, l’administrateur judiciaire nomme un nouveau directeur, Renaud Le Youdec, de la société By Saving, qui a permis de redresser quelques entreprises françaises.</p>
+                <p>Il manque au moins 140.000 € pour payer les salaires. Le député Michel Vergnier se rapproche de Christophe Sirugue, secrétaire d’Etat chargé de l’Industrie et du Premier ministre Bernard Cazeneuve. Finalement les constructeurs vont payer leurs factures et faire des avances sur commandes.</p>
+              </div>
+            </div>
+            <div class="card blue lighten-5">
+              <div class="card-content">
+                <span class="card-title red-text">2017</span>
+                <p>Le 5 janvier, les GM&S sont de retour dans leur entreprise mais manquent de matière première pour travailler. Les constructeurs trainent les pieds. On leur demande de revenir à un chiffre d’affaires identique à celui de janvier 2016 soit 2,6 millions d’euros par mois, or le prévisionnel est à 1,1 million.</p>
+                <p>Les salariés de GM&S ont repris le travail dans une usine... sans travail</p>
+                <p>Le 7 janvier, les GM&S rencontrent François Hollande à l’aéroport de Brive. Une rencontre avec les constructeurs a lieu au ministère de l’économie, le 19 janvier. Renault et Peugeot, les donneurs d’ordre, détiennent les clés de l’avenir du site alors que l’entreprise tourne à 20% de ses capacités.</p>
+              </div>
+            </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<style>
+      .grid .card {
+        width: 600px;
+      }
+      .card-content p {
+        font-size: 15px;
+        text-align: left;
+      }
+      .card-content.big p {
+        font-size:20px;
+        margin-top:30px;
+        text-align: center;
+      }
+</style>
+
+<div class="parallax-container valign-wrapper">
+
+  <div class="parallax"><img src="repertoire/gms/photos/gms1.jpg" alt="Unsplashed background img 3"></div>
+</div>
+<div id="combat" class="container">
+  <div class="section">
+
+    <div class="row">
+
+      <div class="col s12 center">
+        <h3 class="center red-text text-darken-2" style="margin-bottom:30px;">Le Combat</h3>
+        <div class="row">
+        <div class="col s0 m2"></div>
+        <div class="col s12 m8">
+        <div class="card">
+          <div class="card-content big">
+            <span class="card-title blue-text">Depuis le 11 mail 2017</span>
+              <p>Les syndicats ont décidé d'occuper désormais le site <b>24 heures sur 24</b> et ont mené plusieurs actions symboliques pour montrer leur <b>exaspération</b>.</p>
+              <p><b>S'ils n'obtiennent pas de réponse des constructeurs, les salariés menacent de faire sauter l'usine</b>. Plusieurs <b>bouteilles de gaz ont été disposées à plusieurs endroits sur le site creusois</b>.</p>
+              <p>Les salariés <b>ont détruit une partie de leur outil de travail</b> : une machine à commande numérique et une presse servant à produire des pièces pour le constructeur Peugeot.</p>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="parallax-container valign-wrapper">
+
+  <div class="parallax"><img src="repertoire/gms/photos/gms3.jpg" alt="Unsplashed background img 3"></div>
+</div>
+<div id="soutien" class="container">
+  <div class="section">
+      <h3 class="center-align red-text text-darken-2" style="margin-bottom:30px;">Soutenons-les !</h3>
+      <h4 class="center-align blue-text text-darken-2" style="margin-bottom:30px;">Allez les soutenir</h4>
+      <div id="mapid" class="center-align" style="width: 600px; height: 400px; margin:auto"></div>
+      <h4 class="center-align blue-text text-darken-2" style="margin-bottom:30px;margin-top:60px;">Soutien financier</h4>
+      <div class="row">
+        <div class="col s3">
+          <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="static/img/tipeee-logo.jpg" style="padding:20px;">
+            </div>
+          </div>
+        </div><div class="col s3">
+          <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="static/img/hello_asso.png" style="padding:20px;">
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+{% endblock %}

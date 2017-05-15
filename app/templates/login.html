@@ -1,0 +1,55 @@
+{% extends "layout.html" %}
+{% block body %}
+<div class="container">
+  <div class="section">
+    <div class="row">
+      <form class="col s12" action="{{ url_for('user.login') }}" method="post">
+        <h3 class="red-text">L' entreprise</h3>
+        <div class="row">
+          <div class="input-field col s12 m12 l6">
+            <input id="nom_entreprise" type="text" class="validate">
+            <label for="first_name">Nom de l'entreprise</label>
+          </div>
+          <div class="input-field col s12 m12 l3">
+            <input id="code_postal" type="text" class="validate">
+            <label for="last_name">Code postal</label>
+          </div>
+          <div class="input-field col s12 m12 l3">
+            <input id="nb_employes" type="text" class="validate">
+            <label for="last_name">Nombre d'employés</label>
+          </div>
+        </div>
+        <div class="divider"></div>
+        <h3 class="red-text">Le Contexte</h3>
+        <div class="row">
+          <div class="input-field col s12">
+            <textarea id="contexte_accroche" class="materialize-textarea"></textarea>
+            <label for="contexte_accroche">Accroche</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <textarea id="contexte_resume" class="materialize-textarea"></textarea>
+            <label for="contexte_resume">Résumé</label>
+          </div>
+        </div>
+        <div class="divider"></div>
+        <h3 class="red-text">Le Combat</h3>
+        <div class="row">
+          <div class="input-field col s12">
+            <textarea id="contexte_accroche" class="materialize-textarea"></textarea>
+            <label for="contexte_accroche">Accroche</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <textarea id="contexte_resume" class="materialize-textarea"></textarea>
+            <label for="contexte_resume">Résumé</label>
+          </div>
+        </div>
+        {{ form.csrf_token }}
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock %}

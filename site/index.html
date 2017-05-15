@@ -4,7 +4,9 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-  <title>Parallax Template - Materialize</title>
+  <title>Répertoire des luttes</title>
+   <!-- favicon -->
+   <link rel="shortcut icon" type="image/png" href="static/img/favicon.png" sizes="32x32">
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -15,7 +17,7 @@
 <body>
   <nav class="white" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="light-blue-text brand-logo">FI Luttes</a>
+      <img src="static/img/logo.png" style="height:60px;margin-right:20px;"><a id="logo-container" href="#" class="light-blue-text brand-logo">Répertoire des luttes</a>
       <ul class="right hide-on-med-and-down">
       </ul>
 
@@ -24,55 +26,58 @@
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
   </nav>
-  <h1 class="header center red-text" style="text-size:4em;font-family: Montserrat,sans-serif;">G M & S</h1>
+  <!-- <h1 class="header center red-text" style="text-size:4em;font-family: Montserrat,sans-serif;">G M & S</h1> -->
   <div id="index-banner" class="parallax-container">
-    <div class="section no-pad-bot" style="display:none;">
+    <div class="section no-pad-bot">
       <div class="container">
         <br><br>
-        <h1 class="header center red-text">G M & S</h1>
+        <h1 class="header center red-text text-accent-2" style="font-size:7rem;font-weight:600;margin-bottom:0px;">G M & S</h1>
         <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+          <h4 class="header col s12" style="margin-bottom:0px;">Fabricant de pièces automobiles à La Souterraine, France</h4>
         </div>
         <div class="row center">
-          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
+          <h3 class="header col s12">283 salariés</h4>
         </div>
         <br><br>
 
       </div>
     </div>
-    <div class="parallax"><img src="repertoire/gms/photos/gms2.jpg" alt="Unsplashed background img 1"></div>
+    <div class="parallax">
+      <img src="repertoire/gms/photos/gms2.jpg" alt="Unsplashed background img 1" style="-webkit-filter: blur(1px) contrast(200%) grayscale(100%);">
+      <div class="blue darken-4" style="opacity:0.7; width: 100%; height: 100%;  position: absolute; top: 0; left: 0;"></div>
+    </div>
   </div>
 
 
-  <div class="container">
+  <div class="container" style="margin-bottom:100px;">
     <div class="section">
 
       <!--   Icon Section   -->
       <div class="row">
         <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
-            <h5 class="center">Speeds up development</h5>
+          <div class="icon-block" go="#contexte">
+            <h2 class="center red-text" style="font-size:6rem;margin-bottom:0px;"><i class="material-icons">info_outline</i></h2>
+            <h4 class="center blue-text text-darken-2" style="margin-top:0px;">Le contexte</h4>
 
-            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+            <p class="light" style="font-size:18px;text-align:center;">Après 40 années de bons et loyaux services, les constructeurs automobiles Français ont planifié et organisé leur désengagement de notre site industriel GM&S</p>
           </div>
         </div>
 
         <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">group</i></h2>
-            <h5 class="center">User Experience Focused</h5>
+          <div class="icon-block" go="#combat">
+            <h2 class="center red-text" style="font-size:6rem;margin-bottom:0px;"><i class="material-icons">flash_on</i></h2>
+            <h4 class="center blue-text text-darken-2" style="margin-top:0px;">Le combat</h4>
 
-            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
+            <p class="light" style="font-size:18px;text-align:center;">Les salarié(e)s en assemblée générale, ont décidé de montrer leur détermination.<br/><b>Jeudi 11 mai</b>, nous avons coupé en deux un outil de presse, détruit une machine et ceci se répètera chaque jour de la semaine prochaine, tant que notre avenir sera obscur.</p>
           </div>
         </div>
 
         <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
-            <h5 class="center">Easy to work with</h5>
+          <div class="icon-block" go="#soutien">
+            <h2 class="center red-text" style="font-size:6rem;margin-bottom:0px;"><i class="material-icons">thumb_up</i></h2>
+            <h4 class="center blue-text text-darken-2" style="margin-top:0px;">Soutenez-nous !</h4>
 
-            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+            <p class="light" style="font-size:18px;text-align:center;">Soutien des actions ou soutien financier, agissez !</p>
           </div>
         </div>
       </div>
@@ -85,80 +90,158 @@
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+          <!--<h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>-->
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="repertoire/gms/photos/gms1.jpg" alt="Unsplashed background img 2"></div>
+    <div class="parallax"><img src="repertoire/gms/photos/gms4.jpg" alt="Unsplashed background img 2"></div>
   </div>
 
-  <div class="container">
+  <div id="contexte" class="container">
     <div class="section">
 
       <div class="row">
         <div class="col s12 center">
-          <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>Contact Us</h4>
-          <div id="mapid" style="width: 600px; height: 400px;"></div>
-          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+          <h3 class="center blue-text text-darken-2" style="margin-bottom:30px;">Le contexte</h3>
+          <div class="row">
+          <div class="col s0 m2"></div>
+          <div class="col s12 m8">
+          <div class="card">
+            <div class="card-content big">
+                <p>Après 40 années de bons et loyaux services, les constructeurs automobiles Français ont planifié et organisé leur désengagement de notre site industriel GM&S</p><p>Renault depuis 2010 et Peugeot depuis 2014 pour des raisons sommes toutes injustifiables et injustifiées, alors que nous avons toujours satisfait aux critères exigés. Ils prétendent n’avoir pas eu confiance envers nos anciens
+actionnaires, certes !</p>
+<p>Et donc <b>depuis le 2 décembre 2016, nous sommes en redressement judiciaire et donc maintenant sans actionnaire véreux et cupides.</b>Alors qu’attendent-ils pour nous remettre la charge de travail retirée depuis plusieurs années, d’autant plus que des repreneurs sérieux sont intéressés et ils ont la confiance des constructeurs. Pourquoi cet entêtement à vouloir nous faire disparaitre ?</p>
+<p>L’Etat et la Région Nouvelle Aquitaine nous ont, pour l’instant, évité la liquidation judiciaire en finançant la période d’observation à hauteur de 1.7M€. L’Etat pourtant actionnaire des deux constructeurs n’a aucune emprise sur leurs décisions et stratégies industrielles. Etonnant ? Qu’en est-il maintenant avec l’élection de Mr Macron ? Le moment ne nous est pas favorable. Notre dossier ne retient plus l’attention ?</p>
+<p>Cela fait maintenant 15 jours de négociations, sans interférence de notre part, entre les constructeurs (PSA, Renault) et notre directeur de transition Mr LE YOUDEC, qui n’ont abouti à rien ! Si ce n’est un accroissement du chiffre d’affaires de 18% qui est du à l’augmentation de prix de la matière (acier) non répercutée depuis début 2016 et bien sûr non rétroactive.</p>
+<p>Pourtant le secteur automobile se porte bien. Il n’y a aucune raison objective que nous retrouvions dans cette situation. Pourquoi les constructeurs s’entêtent-ils, en refusant de nous remettre de la charge supplémentaire ? De quoi décourager les repreneurs potentiels de faire une offre de reprise sérieuse. GMD nous informe que dans la configuration actuelle il jetterait l’éponge.</p>
+<p>Nous avons demandé jeudi 4 mai un rendez-vous avec PSA, Renault et l’Etat qui est pour l’instant resté lettre morte. L’Etat lui nous propose de se faire représenter par le Préfet de la Creuse. Il abandonne donc le dossier GM&S ?</p>
+<p>Nous avons aussi demandé un CE extraordinaire avec notre administrateur judiciaire, il nous répond qu’il n’en voit pas l’utilité pour l’instant et propose d’en faire un Jeudi 18 Mai, soit 5 jours avant l’audience du tribunal. Quelles sont ses intentions, que nous cache-t-il ? Au regard de la situation c’est plutôt sidérant !</p>
+<p><b>Il est urgent d’agir !</b> Faut-il se radicaliser pour être entendu et enfin être pris au sérieux ?</p>
+            </div>
+          </div>
+        </div>
         </div>
       </div>
-
     </div>
   </div>
-
+</div>
+  <style>
+        .grid .card {
+          width: 600px;
+        }
+        .card-content p {
+          font-size: 15px;
+          text-align: left;
+        }
+        .card-content.big p {
+          font-size:18px;
+          margin-top:30px;
+          text-align: center;
+        }
+        .card-content .collection li {
+          font-size: 18px;
+          line-height: 2rem;
+          text-align: left;
+          padding:20px;
+        }
+        .collection.message p {
+          font-size: 22px;
+          font-weight:500;
+          line-height: 2rem;
+          text-align: center;
+         }
+         .collection.actions p {
+           font-size: 22px;
+           line-height: 2rem;
+           text-align: center;
+          }
+  </style>
 
   <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+
+    <div class="parallax"><img src="repertoire/gms/photos/gms1.jpg" alt="Unsplashed background img 3"></div>
+  </div>
+  <div id="combat" class="container">
+    <div class="section">
+
+      <div class="row">
+
+        <div class="col s12 center">
+          <h3 class="center red-text text-darken-2" style="margin-bottom:30px;">Le Combat</h3>
+          <div class="row">
+          <div class="col s0 m2"></div>
+          <div class="col s12 m8">
+          <div class="card">
+            <div class="card-content big">
+              <span class="card-title blue-text">Les raisons</span><ul class="collection">
+              <li class="collection-item"><b>Un manque évident de volonté</b> de la part de Peugeot et Renault d’aboutir, notre
+directeur du site Mr LE YOUDEC, <b>désabusé par leur comportement</b> qu’il juge destructeur et avec notre accord, a décidé de ne plus livrer PSA et Renault depuis Mercredi 10 Mai.</li>
+<li class="collection-item">Le <b>mépris et l’ignorance ostentatoire</b> des constructeurs envers les représentants des salarié(e)s et à fortiori de tous les salarié(e)s.</li>
+<li class="collection-item">La <b>communication de façade</b> de RENAULT et de PSA dans les médiats. Renault a
+récemment affiché une charte disant soutenir le développement des territoires français... quant à PSA, il dit soutenir et continuer à soutenir GM&S. Les actes sont loin de correspondre aux discours !</li>
+<li class="collection-item">Le risque plus qu’évident de <b>liquidation au tribunal de commerce</b> de Poitiers le 23 mai.</li></ul>
+  <span class="card-title blue-text">Les actions</span><ul class="collection"><li class="collection-item">
+    <p>Jeudi 11 mai, nous avons <b>coupé en deux un outil de presse</b>, <b>détruit une machine</b> et ceci <b>se répètera chaque jour</b> de la semaine prochaine, tant que notre avenir sera obscur. <b>Ils veulent casser notre outil de travail</b> et bien on commence pour eux. C’est bien pour faire comprendre ce que <b>notre avenir et celle de nos familles</b> risque de devenir....</p>
+<p>Nous avons aussi <b>piégé le site</b> et par sécurité le site est surveillé 24h sur 24, weekend compris.</p>
+</li></ul>
+<span class="card-title blue-text">Notre message</span><ul class="collection message"><li class="collection-item">
+<p>La casse de notre outil de travail, ce n’est pas les salarié(e)s qui l’ont planifié et organisé !</p>
+<p>La casse de l’industrie Française, ce n’est pas les salarié(e)s qui l’ont programmé et réalisé !</p>
+<p>Mettre en scène la casse d’une usine si les donneurs d’ordre arrivent à leurs fins marque plus les esprits quand c’est visible !</p></li></ul>
+            </div>
+          </div>
+        </div>
+        </div>
         </div>
       </div>
     </div>
+  </div>
+  <div class="parallax-container valign-wrapper">
+
     <div class="parallax"><img src="repertoire/gms/photos/gms3.jpg" alt="Unsplashed background img 3"></div>
   </div>
+  <div id="soutien" class="container">
+    <div class="section">
+        <h3 class="center-align red-text text-darken-2" style="margin-bottom:30px;">Soutenez-nous !</h3>
+        <h4 class="center-align blue-text text-darken-2" style="margin-bottom:30px;">Les rendez-vous</h4>
+        <ul class="collection actions">
+        <li class="collection-item"><p><b>LUNDI 15 MAI à 14h30</b></p><p>Rendez vous à la préfecture de la Creuse pour une réunion officielle entre
+les GM&s, les Elus-es, les Constructeurs...</p></li>
+<li class="collection-item"><p><b>MARDI 16 MAI</b></p><p>Appel National à la population pour un rassemblement devant le Site de GM&S à
+15h et/ou 17h devant la Mairie de La Souterraine</p></li>
+<li class="collection-item"><p><b>MERCREDI 17 MAI</b></p><p>Action sur PARIS</p></li></ul>
+      <h4 class="center-align blue-text text-darken-2" style="margin-bottom:30px;">Le site</h4>
+        <div id="mapid" class="center-align" style="width: 600px; height: 400px; margin:auto"></div>
+        <h4 class="center-align blue-text text-darken-2" style="margin-bottom:30px;margin-top:60px;">Soutien financier</h4>
 
-  <footer class="page-footer teal">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
-
-
+        <div class="row">
+          <div class="col s3">
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="static/img/tipeee-logo.jpg" style="padding:20px;">
+              </div>
+            </div>
+          </div><div class="col s3">
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="static/img/hello_asso.png" style="padding:20px;">
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-      </div>
     </div>
-    <div class="footer-copyright">
-      <div class="container">
-      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
-      </div>
-    </div>
+  </div>
+
+
+  <footer class="page-footer">
+
   </footer>
 
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
   <script src="static/leaflet/leaflet.js"></script>
   <script src="static/js/init.js"></script>
 

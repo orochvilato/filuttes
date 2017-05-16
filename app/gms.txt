@@ -1,0 +1,52 @@
+[Entreprise]
+nom: G M & S
+description: Fabricant de pièces automobiles à La Souterraine, France
+geolocalisation: 46.247377,1.504289
+
+[Contexte.accroche]
+Après 40 années de bons et loyaux services, les constructeurs automobiles Français ont planifié et organisé leur désengagement de notre site industriel GM&S
+
+[Contexte.texte]
+Après 40 années de bons et loyaux services, les constructeurs automobiles Français ont planifié et organisé leur désengagement de notre site industriel GM&S</p><p>Renault depuis 2010 et Peugeot depuis 2014 pour des raisons sommes toutes injustifiables et injustifiées, alors que nous avons toujours satisfait aux critères exigés. Ils prétendent n’avoir pas eu confiance envers nos anciens actionnaires, certes !
+Et donc **depuis le 2 décembre 2016, nous sommes en redressement judiciaire et donc maintenant sans actionnaire véreux et cupides**. Alors qu’attendent-ils pour nous remettre la charge de travail retirée depuis plusieurs années, d’autant plus que des repreneurs sérieux sont intéressés et ils ont la confiance des constructeurs. Pourquoi cet entêtement à vouloir nous faire disparaitre ?
+L’Etat et la Région Nouvelle Aquitaine nous ont, pour l’instant, évité la liquidation judiciaire en finançant la période d’observation à hauteur de 1.7M€. L’Etat pourtant actionnaire des deux constructeurs n’a aucune emprise sur leurs décisions et stratégies industrielles. Etonnant ? Qu’en est-il maintenant avec l’élection de Mr Macron ? Le moment ne nous est pas favorable. Notre dossier ne retient plus l’attention ?
+Cela fait maintenant 15 jours de négociations, sans interférence de notre part, entre les constructeurs (PSA, Renault) et notre directeur de transition Mr LE YOUDEC, qui n’ont abouti à rien ! Si ce n’est un accroissement du chiffre d’affaires de 18% qui est du à l’augmentation de prix de la matière (acier) non répercutée depuis début 2016 et bien sûr non rétroactive.
+Pourtant le secteur automobile se porte bien. Il n’y a aucune raison objective que nous retrouvions dans cette situation. Pourquoi les constructeurs s’entêtent-ils, en refusant de nous remettre de la charge supplémentaire ? De quoi décourager les repreneurs potentiels de faire une offre de reprise sérieuse. GMD nous informe que dans la configuration actuelle il jetterait l’éponge.
+Nous avons demandé jeudi 4 mai un rendez-vous avec PSA, Renault et l’Etat qui est pour l’instant resté lettre morte. L’Etat lui nous propose de se faire représenter par le Préfet de la Creuse. Il abandonne donc le dossier GM&S ?
+Nous avons aussi demandé un CE extraordinaire avec notre administrateur judiciaire, il nous répond qu’il n’en voit pas l’utilité pour l’instant et propose d’en faire un Jeudi 18 Mai, soit 5 jours avant l’audience du tribunal. Quelles sont ses intentions, que nous cache-t-il ? Au regard de la situation c’est plutôt sidérant !
+**Il est urgent d’agir !** Faut-il se radicaliser pour être entendu et enfin être pris au sérieux ?
+
+[Combat.accroche]
+Les salarié(e)s en assemblée générale, ont décidé de montrer leur détermination.
+**Jeudi 11 mai**, nous avons coupé en deux un outil de presse, détruit une machine et ceci se répètera chaque jour de la semaine prochaine, tant que notre avenir sera obscur.
+
+[Combat.raisons]
+**Un manque évident de volonté** de la part de Peugeot et Renault d’aboutir. Notre directeur du site Mr LE YOUDEC, **désabusé par leur comportement** qu’il juge destructeur et avec notre accord, a décidé de ne plus livrer PSA et Renault depuis Mercredi 10 Mai.
+Le **mépris et l’ignorance ostentatoire** des constructeurs envers les représentants des salarié(e)s et à fortiori de tous les salarié(e)s.
+La **communication de façade** de RENAULT et de PSA dans les médiats. Renault a récemment affiché une charte disant soutenir le développement des territoires français... quant à PSA, il dit soutenir et continuer à soutenir GM&S. Les actes sont loin de correspondre aux discours !
+Le risque plus qu’évident de **liquidation au tribunal de commerce** de Poitiers le 23 mai.
+
+[Combat.actions]
+Jeudi 11 mai, nous avons **coupé en deux un outil de presse**, **détruit une machine** et ceci **se répètera chaque jour** de la semaine prochaine, tant que notre avenir sera obscur. **Ils veulent casser notre outil de travail** et bien on commence pour eux. C’est bien pour faire comprendre ce que **notre avenir et celle de nos familles** risque de devenir...</p>
+Nous avons aussi **piégé le site** et par sécurité le site est surveillé 24h sur 24, weekend compris.
+
+[Combat.message]
+La casse de notre outil de travail, ce n’est pas les salarié(e)s qui l’ont planifié et organisé !
+La casse de l’industrie Française, ce n’est pas les salarié(e)s qui l’ont programmé et réalisé !
+Mettre en scène la casse d’une usine si les donneurs d’ordre arrivent à leurs fins marque plus les esprits quand c’est visible !
+
+[Soutien.accroche]
+Soutien des actions ou soutien financier aux salariés en difficulté, agissez !
+
+[Soutien.rdv]
+LUNDI 15 MAI à 14h30 | Rendez vous à la préfecture de la Creuse pour une réunion officielle entre les GM&s, les Elus-es, les Constructeurs...
+MARDI 16 MAI | Appel National à la population pour un rassemblement devant le Site de GM&S à 15h et/ou 17h devant la Mairie de La Souterraine
+MERCREDI 17 MAI | Action sur PARIS
+
+[Soutien.financier]
+**Chèque** à l’ordre du Syndicat GM&S Industrie - à l’adresse ZI le cheix 23300 La Souterraine.
+tipee:
+helloasso:
+
+[Soutien.petitions]
+change.org:https://www.change.org/p/soutenez-nous-ne-dites-pas-on-s-en-fout"
